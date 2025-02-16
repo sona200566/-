@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج الطلاب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>استعلام عن النتيجة</h2>
+        <input type="text" id="studentID" placeholder="أدخل رقم الجلوس">
+        <button onclick="showResult()">عرض النتيجة</button>
+        <div id="resultBox" class="hidden">
+            <h3>النتيجة:</h3>
+            <table>
+                <tr>
+                    <th>رقم الجلوس</th>
+                    <th>الاسم</th>
+                    <th>المجموع</th>
+                    <th>الحالة</th>
+                </tr>
+                <tr>
+                    <td id="resID"></td>
+                    <td id="resName"></td>
+                    <td id="resScore"></td>
+                    <td id="resStatus"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
